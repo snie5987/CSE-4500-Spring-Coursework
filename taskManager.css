@@ -1,0 +1,282 @@
+﻿body {
+    background-color: darkgray;
+}
+/*
+    Used for Night Mode
+    background: rgb(32, 32, 32);
+*/
+
+#webName{
+    padding: 40px;
+    background: rgb(21,34,56);
+    border-radius: 10px;
+}
+.webTitle {
+    font-size: 28px;
+    font-family: 'Fredericka the Great',cursive;
+    color: lightslategray;
+}
+
+#dMText {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Fredericka the Great', cursive;
+    color: lightslategray;
+
+}
+
+#dMText {
+    color: azure;
+    width: 10%;
+    font-size: 16px;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    left: 190px;
+    top: 103px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+     position: absolute;
+     content: "";
+     height: 13px;
+     width: 13px;
+     left: 2px;
+     bottom: 2.5px;
+     background-color: white;
+     transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: lightslategray;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px lightslategray;
+}
+
+input:checked + .slider:before {
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 16px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav .gColor {
+    background-color: dimgray;
+}
+.btn,.closeBtn, .signOutBtn {
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    border-radius: 5px;
+    float: right;
+}
+.closeBtn {
+    position: absolute;
+    left: 570px;
+}
+.signOutBtn{
+    position: absolute;
+    left: 740px;
+    background-color: darkslategray;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+.signUpContainer,.loginContainer {
+    width: 600px;
+    margin: auto;
+    visibility: hidden;
+}
+.loginContainer {
+    width: 400px;
+}
+
+
+input[type=text],input[type=password] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 150px; 
+    border-radius: 5px;
+}
+
+.loginContainer button,.signUpContainer button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.loginContainer button:hover,.signUpContainer button:hover{
+    background: #ccc;
+}
+
+.accountContainer {
+    background-color: whitesmoke;
+    width: 300px;
+    height: 220px;
+    border-radius:5px;
+    margin: auto;
+    visibility: hidden;
+}
+.accountInfo,.accountName,.accountUserName {
+    background-color: lightslategray;
+    width: 160px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    font-family: 'Fredericka the Great', cursive;
+}
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.header {
+    background-color: #7393B3;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* Style the input */
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+* {
+    box-sizing: border-box;
+}
+.userTasks {
+    display: none;
+}
